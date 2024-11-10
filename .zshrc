@@ -11,7 +11,7 @@ PROMPT='%F{cyan}%n@%m%f %F{yellow}%~%f %# '
 # Enable Zsh plugins
 source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-source "$(brew --prefix)/share/zsh-completions/zsh-completions"
+source "$(brew --prefix)/share/zsh-completions/"
 source "$(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh"
 
 # History configuration
