@@ -1,0 +1,11 @@
+# .aliases
+
+# Common Aliases
+alias ll='ls -lah'
+alias gs='git status'
+alias gco='git checkout'
+alias v='vim'
+alias ..='cd ..'
+
+# Custom Commands
+alias reload='source ~/.zshrc'

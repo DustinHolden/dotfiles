@@ -1,0 +1,18 @@
+- defaults:
+    link:
+      create: true  # Creates directories if they don't exist
+
+- link:
+    ~/.zshrc: .zshrc
+    ~/.gitconfig: .gitconfig
+    ~/.gitconfig-tyler-tech: .gitconfig-tyler-tech
+    ~/.gitconfig-personal: .gitconfig-personal
+    ~/.gitignore_global: .gitignore_global
+    ~/.aliases: .aliases
+    ~/.exports: .exports
+    ~/.functions: .functions
+    ~/.vimrc: .vimrc
+    ~/.bash_profile: .bash_profile
+    ~/.curlrc: .curlrc
+    ~/.wgetrc: .wgetrc
+    ~/.inputrc: .inputrc

@@ -1,0 +1,41 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Logs
+*.log
+*.out
+
+# Node.js dependencies and modules
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+.Python
+env/
+venv/
+*.egg-info/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Compiled code
+*.class
+*.dll
+*.exe
+*.o
+*.pyc
+
+# Git
+*.orig

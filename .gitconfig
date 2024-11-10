@@ -1,0 +1,48 @@
+# .gitconfig
+
+[user]
+  name = Dustin Holden                   # Set a default name
+  email = dustin.holden@gmail.com        # Default email
+
+[includeIf "gitdir:~/Projects/tyler-tech/"]
+  path = ~/.gitconfig-tyler-tech
+
+[includeIf "gitdir:~/Projects/personal/"]
+  path = ~/.gitconfig-personal
+
+[filter "lfs"]
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+
+[alias]
+  # Quick Git Status and Branch Management
+  s = status -s                  # Short status output
+  amend = commit --amend         # Amend the last commit
+  cm = commit -m                 # Shortcut for commit with message
+  unstage = reset HEAD --        # Undo the last staged change
+  pom = push origin master       # Quick push to master (change branch if needed)
+
+  # Log Formatting
+  lg = log --oneline --graph --all --decorate  # Graphical one-line log
+  recent = log -5 --pretty=oneline             # Show the last 5 commits
+
+  # Stashing
+  save = stash save               # Save to stash with a name
+  pop = stash pop                 # Apply last stashed changes
+
+[fetch]
+  prune = true                    # Removes remote branches that no longer exist
+
+[merge]
+  ff = false                      # Disables fast-forward merges
+
+[core]
+  pager = cat                     # Prevents paging for Git output
+  whitespace = fix,-indent-with-non-tab,trailing-space,space-before-tab
+  excludesfile = ~/.gitignore_global  # Use global gitignore
+  editor = vim
+
+[interactive]
+  diffFilter = cat

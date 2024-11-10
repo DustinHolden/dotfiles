@@ -1,0 +1,8 @@
+# .inputrc
+
+# Enable case-insensitive history search
+set completion-ignore-case on
+
+# Use arrow keys to navigate through command history
+"\e[A": history-search-backward
+"\e[B": history-search-forward
