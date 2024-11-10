@@ -9,10 +9,10 @@ source ~/.functions
 PROMPT='%F{cyan}%n@%m%f %F{yellow}%~%f %# '
 
 # Enable Zsh plugins
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /opt/homebrew/share/zsh-completions.zsh
-source /opt/homebrew/share/zsh-history-substring-search.zsh
+source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "$(brew --prefix)/share/zsh-completions/zsh-completions.zsh"
+source "$(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh"
 
 # History configuration
 HISTFILE=~/.zsh_history
