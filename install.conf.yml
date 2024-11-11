@@ -20,7 +20,7 @@
 
 - shell:
     # Generate SSH key pair if not present
-    - if [ ! -f ~/.ssh/id_rsa_dotfiles ]; then ssh-keygen -t rsa -b 4096 -C "me@dustinholden.com" -f ~/.ssh/id_rsa_dotfiles; fi
+    #    - if [ ! -f ~/.ssh/id_rsa_dotfiles ]; then ssh-keygen -t rsa -b 4096 -C "me@dustinholden.com" -f ~/.ssh/id_rsa_dotfiles; fi
     
     # Enable Remote Login for SSH access
     - sudo systemsetup -setremotelogin on
