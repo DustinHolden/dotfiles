@@ -3,7 +3,6 @@
       create: true  # Creates directories if they don't exist
 
 - link:
-    ~/.ssh/id_rsa_dotfiles.pub: ssh_keys/id_rsa_dotfiles.pub
     ~/.zshrc: .zshrc
     ~/.gitconfig: .gitconfig
     ~/.gitconfig-tyler-tech: .gitconfig-tyler-tech
@@ -19,9 +18,6 @@
     ~/.inputrc: .inputrc
 
 - shell:
-    # Generate SSH key pair if not present
-    #    - if [ ! -f ~/.ssh/id_rsa_dotfiles ]; then ssh-keygen -t rsa -b 4096 -C "me@dustinholden.com" -f ~/.ssh/id_rsa_dotfiles; fi
-    
     # Enable Remote Login for SSH access
     - sudo systemsetup -setremotelogin on
     # Start SSH service (if necessary)
