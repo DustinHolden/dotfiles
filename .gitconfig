@@ -46,3 +46,5 @@
 
 [interactive]
   diffFilter = cat
+[pull]
+	rebase = false
